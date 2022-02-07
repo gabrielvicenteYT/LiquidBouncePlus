@@ -30,8 +30,8 @@ class AntiBan : Module() {
     override fun onInitialize() {
         thread {
             try {
-                obStaffs = HttpUtils.get("https://pastebin.com/raw/Af7aQ5Dz")
-                //println(obStaffs)
+                obStaffs = HttpUtils.get("${LiquidBounce.CLIENT_CLOUD}/staffs.txt")
+                println("[Staff list] " + obStaffs)
             } catch (e: Exception) {
                 // ignore fr fr
             }

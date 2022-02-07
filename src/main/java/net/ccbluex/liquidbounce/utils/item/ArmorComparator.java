@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Comparator;
 
-import static net.ccbluex.liquidbounce.utils.item.ItemUtils.getEnchantmentCount;
+//import static net.ccbluex.liquidbounce.utils.item.ItemUtils.getEnchantmentCount;
 
 public class ArmorComparator implements Comparator<ArmorPiece> {
     private static final Enchantment[] DAMAGE_REDUCTION_ENCHANTMENTS = {Enchantment.protection, Enchantment.projectileProtection, Enchantment.fireProtection, Enchantment.blastProtection};
@@ -51,7 +51,7 @@ public class ArmorComparator implements Comparator<ArmorPiece> {
 
             // If both have the same enchantment threshold, prefer the item with more enchantments
             if (otherEnchantmentCmp == 0) {
-                int enchantmentCountCmp = Integer.compare(getEnchantmentCount(o1.getItemStack()), getEnchantmentCount(o2.getItemStack()));
+                int enchantmentCountCmp = Integer.compare(ItemUtils.getEnchantmentCount(o1.getItemStack()), ItemUtils.getEnchantmentCount(o2.getItemStack()));
 
                 if (enchantmentCountCmp != 0)
                     return enchantmentCountCmp;

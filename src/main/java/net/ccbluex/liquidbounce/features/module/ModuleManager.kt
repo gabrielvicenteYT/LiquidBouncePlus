@@ -41,7 +41,7 @@ class ModuleManager : Listenable {
         ClientUtils.getLogger().info("[ModuleManager] Loading modules...")
 
         registerModules(
-                AutoArmor::class.java,
+                //AutoArmor::class.java,
                 AutoPot::class.java,
                 AutoWeapon::class.java,
                 BowAimbot::class.java,
@@ -107,7 +107,7 @@ class ModuleManager : Listenable {
                 Animations::class.java,
                 ReverseStep::class.java,
                 TNTBlock::class.java,
-                InvCleaner::class.java,
+                InvManager::class.java,
                 TrueSight::class.java,
                 AntiBlind::class.java,
                 Breadcrumbs::class.java,
@@ -178,7 +178,7 @@ class ModuleManager : Listenable {
                 FakeLag::class.java,
                 PacketFixer::class.java,
                 AutoPlay::class.java,
-                AutoKnight::class.java,
+                AutoKit::class.java,
                 AntiBan::class.java
         )
 
